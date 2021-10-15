@@ -1,0 +1,53 @@
+.item {
+    background: #fff;
+    color: #000;
+    border-radius: 15px;
+    border: 2px solid #fff;
+    overflow: hidden;
+    transition: 0.3s;
+    &:hover{
+        box-shadow: 1px 5px 20px 0px #979797;
+        transform: translateY(-5px);
+    }
+    &__content{
+        padding: 15px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 170px;
+    }
+    &__img{
+        min-height: 217px;
+        background: #6c6c6c;
+    }
+    &__title{
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    &__description{
+        font-size: 0.8rem;
+        line-height: 1rem;
+        color: #303030;
+        margin-top: 10px;
+    }
+    &__price{
+        font-size: 1.2rem;
+        line-height: 1rem;
+        font-weight: 900;
+        text-align: center;
+        margin: 10px auto;
+    }
+    &__btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        min-height: 45px;
+        font-size: 1rem;
+        line-height: 1rem;
+        border-radius: 10px;
+        background-image: radial-gradient(rgb(207, 25, 52), rgb(201, 26, 51), rgb(194, 26, 51), rgb(188, 27, 50), rgb(182, 28, 49), rgb(176, 28, 48), rgb(169, 29, 48), rgb(163, 29, 47), rgb(157, 30, 46), rgb(151, 31, 45), rgb(144, 31, 45), rgb(138, 32, 44));
+        color: #fff;
+    }
+}

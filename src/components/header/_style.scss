@@ -1,0 +1,35 @@
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 10px 0;
+    background-color: #000;
+    box-shadow: 0px 5px 10px #1e1e1e;
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__title{
+        font-size: 1.5rem;
+        line-height: 1rem;
+    }
+    &__logo{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: #fff;
+        transition: 0.3s;
+        img{
+            max-width: 45px;
+            margin-right: 15px;
+        }
+        p{
+            font-size: 1.2rem;
+            line-height: 1rem;
+            span{
+                font-weight: 100;
+            }
+        }
+    }
+}
