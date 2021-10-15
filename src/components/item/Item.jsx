@@ -1,5 +1,12 @@
 function Item(props) {
-  const { mainId, displayName, displayDescription, price, granted } = props;
+  const {
+    mainId,
+    displayName,
+    displayDescription,
+    price,
+    granted,
+    addToBasket = Function.prototype,
+  } = props;
 
   return (
     <div className="item" id={mainId}>
@@ -13,7 +20,16 @@ function Item(props) {
         </div>
         <div className="item__action">
           <p className="item__price">{price.finalPrice}</p>
-          <button className="item__btn">Купить</button>
+          <button
+            className="item__btn"
+            onClick={() =>
+              addToBasket({
+                mainId                
+              })
+            }
+          >
+            Купить
+          </button>
         </div>
       </div>
     </div>
