@@ -1,0 +1,50 @@
+.basket__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    &-title{
+        width: 100%;
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    &-quantity{
+        font-size: 1rem;
+        line-height: 1rem;
+        width: 20px;
+        text-align: center;
+        flex-shrink: 0;
+    }
+    &-price{
+        text-align: right;
+        font-size: 1.2rem;
+        line-height: 1rem;
+        width: 45px;
+        flex-shrink: 0;
+        margin: 0 5px;
+    }
+    &-clear{
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    span{
+        font-size: 1rem;
+        line-height: 1rem;
+        width: 10px;
+        text-align: center;
+        flex-shrink: 0;
+        margin: 0 5px;
+    }
+    &-delete{
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        cursor: pointer;
+        img{
+            max-width: 15px;
+        }
+    }
+}

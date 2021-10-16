@@ -1,0 +1,21 @@
+.basket__list{
+    @media (max-width: 1170px) {
+        
+    }
+    @media (max-width: 992px) {
+
+    }
+    @media (max-width: 768px) {
+
+    }
+    @media (max-width: 575px) {
+        max-width: 91%;
+        padding: 25px 15px;
+        &-title{
+            font-size: 1.3rem;
+        }
+        &-total{
+            font-size: 1.2rem;
+        }
+    }
+}

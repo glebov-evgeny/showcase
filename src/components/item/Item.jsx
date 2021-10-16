@@ -8,6 +8,8 @@ function Item(props) {
     addToBasket = Function.prototype,
   } = props;
 
+const itemPrice = price.finalPrice;
+
   return (
     <div className="item" id={mainId}>
       <div className="item__img">
@@ -19,12 +21,14 @@ function Item(props) {
           <p className="item__description">{displayDescription}</p>
         </div>
         <div className="item__action">
-          <p className="item__price">{price.finalPrice}</p>
+          <p className="item__price">{itemPrice}</p>
           <button
             className="item__btn"
             onClick={() =>
               addToBasket({
-                mainId                
+                mainId,
+                displayName,
+                itemPrice              
               })
             }
           >
