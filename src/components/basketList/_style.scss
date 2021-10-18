@@ -2,7 +2,7 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%) rotate(-180deg) scale(0);
+    transform: translate(-50%,-50%);
     z-index: 9999;
     padding: 35px 25px;
     border: 3px solid #000000;
@@ -14,8 +14,16 @@
     max-height: 500px;
     overflow-y: auto;
     transition: 0.3s;
-    &.active{
-        transform: translate(-50%,-50%) rotate(0deg) scale(1);
+    animation: showBskt 300ms ease-in-out;
+    @keyframes showBskt {
+        from{
+            top: 60%;
+            opacity: 0;
+        }
+        to{
+            top: 50%;
+            opacity: 1;
+        }
     }
     &-title{
         font-size: 1.5rem;
@@ -26,6 +34,22 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 25px;
+    }
+    &-btn{
+        display: none;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        min-height: 45px;
+        font-size: 1rem;
+        line-height: 1rem;
+        color: #fff;
+        background-image: radial-gradient(rgb(207, 25, 52), rgb(201, 26, 51), rgb(194, 26, 51), rgb(188, 27, 50), rgb(182, 28, 49), rgb(176, 28, 48), rgb(169, 29, 48), rgb(163, 29, 47), rgb(157, 30, 46), rgb(151, 31, 45), rgb(144, 31, 45), rgb(138, 32, 44));
+        border-radius: 10px;
+        cursor: pointer;
         margin-top: 25px;
     }
     &-total{

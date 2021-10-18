@@ -1,6 +1,9 @@
 @import './common.scss';
 @import './fonts.scss';
 
+@import './components/alert/style';
+@import './components/alert/responsive';
+
 @import './components/header/style';
 @import './components/header/responsive';
 
