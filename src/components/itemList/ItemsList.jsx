@@ -5,11 +5,10 @@ function ItemsList(props) {
 
   const showMore = 15;
 
-
-
   if(!items.length) {
     return <h3>Ничегошеньки</h3>
   }
+  
   return (
       <div className="item__list">
           {items.slice(0, showMore).map(item => (
