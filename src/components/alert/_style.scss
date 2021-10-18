@@ -1,6 +1,6 @@
 .alert {
   position: fixed;
-  top:150px;
+  top:100px;
   left: 50%;
   transform: translateX(-50%);
   background: #fff;
@@ -11,14 +11,14 @@
   line-height: 1rem;
   z-index: 9999;
   box-shadow: 0 0 50px #000;
-  animation: showAlert 300ms ease-in-out;
+  animation: showAlert 200ms ease-in-out;
     @keyframes showAlert {
         from{
-            top: 100px;
+            top: 90px;
             opacity: 0;
         }
         to{
-            top:150px;
+            top:100px;
             opacity: 1;
         }
     }

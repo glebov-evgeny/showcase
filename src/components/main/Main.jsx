@@ -40,7 +40,6 @@ function Main(params) {
       setOrder(newOrder);
     }
     setAlertName(item.displayName)
-    console.log(item.displayName)
   };
 
   const removeFromBasket = (mainId) => {
@@ -71,11 +70,12 @@ function Main(params) {
     const newOrder = order.map((el) => {
       if (el.mainId === mainId) {
         const newQuantity = el.quantity - 1;
-        
-        return {
-          ...el,
-          quantity: newQuantity >= 0 ? newQuantity : 0,
-        };
+
+          return {
+            ...el,
+            quantity: newQuantity >= 1 ? newQuantity : 1,
+          };
+
       } else {
         return el;
       }
