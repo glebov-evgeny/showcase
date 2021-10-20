@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { ShopContext } from "../../context";
 import { Item } from "../item/Item";
 
-function ItemsList(props) {
+function ItemsList() {
   const { items = [] } = useContext(ShopContext);
 
   if (!items.length) {
