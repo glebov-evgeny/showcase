@@ -12,3 +12,4 @@ Link: https://glebov-evgeny.github.io/showcase/
 * Pop-up notifications when adding products.
 
 
+![1634715983593](https://user-images.githubusercontent.com/35433087/138050316-82cf4843-ebda-4f30-baac-c93daaae8844.jpg)
