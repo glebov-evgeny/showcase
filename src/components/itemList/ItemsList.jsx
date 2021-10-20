@@ -1,22 +1,21 @@
-import {Item} from '../item/Item';
+import { useContext } from "react";
+import { ShopContext } from "../../context";
+import { Item } from "../item/Item";
 
 function ItemsList(props) {
-  const { items = [], addToBasket = Function.prototype} = props;
+  const { items = [] } = useContext(ShopContext);
 
-  const showMore = 15;
-
-  if(!items.length) {
-    return <h3>Ничегошеньки</h3>
+  if (!items.length) {
+    return <h3>Ничегошеньки</h3>;
   }
-  
+
   return (
-      <div className="item__list">
-          {items.slice(0, showMore).map(item => (
-              <Item key={item.mainId} {...item} addToBasket={addToBasket}/>
-          ))}
-      </div>
-      
-  )
+    <div className="item__list">
+      {items.slice(0, 10).map((item) => (
+        <Item key={item.mainId} {...item} />
+      ))}
+    </div>
+  );
 }
 
 export { ItemsList };

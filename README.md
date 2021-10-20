@@ -1,6 +1,7 @@
 # React Showcase
-Project presentation of the basket logic in the online store.<br>
-Goods from the FortniteApi.io API. <br>
+Project presentation of basket logic in online store.<br>
+Made with Context API + useReducer<br>
+Goods from FortniteApi.io<br>
 
 
 Link: https://glebov-evgeny.github.io/showcase/

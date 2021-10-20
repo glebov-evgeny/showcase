@@ -1,3 +1,6 @@
+import { useContext } from "react";
+import { ShopContext } from "../../context";
+
 function Item(props) {
   const {
     mainId,
@@ -5,10 +8,11 @@ function Item(props) {
     displayDescription,
     price,
     granted,
-    addToBasket = Function.prototype,
+
   } = props;
 
-const itemPrice = price.finalPrice;
+  const {addToBasket} = useContext(ShopContext)
+  const itemPrice = price.finalPrice;
 
   return (
     <div className="item" id={mainId}>
@@ -28,7 +32,7 @@ const itemPrice = price.finalPrice;
               addToBasket({
                 mainId,
                 displayName,
-                itemPrice              
+                itemPrice,
               })
             }
           >

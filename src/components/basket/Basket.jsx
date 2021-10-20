@@ -1,7 +1,11 @@
+import { useContext } from "react";
+import { ShopContext } from "../../context";
 import basketIcon from './img/basket.png';
 
-function Basket(props) {
-  const { quantity = 0, handleBasketShow = Function.prototype } = props;
+function Basket() {
+  const { order, handleBasketShow } = useContext(ShopContext);
+
+  const quantity = order.length;
   return (
     <div className="basket">
         <div className="basket__content" onClick={handleBasketShow}>

@@ -1,3 +1,6 @@
+import { useContext } from "react";
+import { ShopContext } from "../../context";
+
 import closePic from './img/close.png';
 
 function BasketItem(props) {
@@ -6,10 +9,10 @@ function BasketItem(props) {
     displayName,
     itemPrice,
     quantity,
-    removeFromBasket = Function.prototype,
-    incQuantity = Function.prototype,
-    decQuantity = Function.prototype,
   } = props;
+
+  const {removeFromBasket, incQuantity, decQuantity} = useContext(ShopContext);
+
 
   return (
     <div className="basket__item" id={mainId}>
